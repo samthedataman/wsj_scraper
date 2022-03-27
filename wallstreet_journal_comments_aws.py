@@ -27,6 +27,12 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 chrome_options = Options()
 chrome_options.add_argument("--window-size=1920,1080")
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-gpu")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("enable-automation")
+chrome_options.add_argument("--disable-infobars")
+chrome_options.add_argument("--disable-dev-shm-usage")
 
 TODAY_TIME = dt.datetime.now()
 TODAY_DATE = dt.datetime.now().strftime("%m-%d-%Y")
@@ -88,7 +94,7 @@ def get_votes(col):
 options = Options()
 options.page_load_strategy = 'normal'
 #######LOG INTO WSJ############
-driver = webdriver.Chrome('/Users/samsavage/Desktop/Urban Dictionary/chromedriver',options=chrome_options)
+driver = webdriver.Chrome('/home/ec2-user/Code/wsj_scraper/chromedriver',options=chrome_options)
 driver.get('https://sso.accounts.dowjones.com/login?state=hKFo2SAyaEVBbUlxVVlqV0w5blRIVnFGYWtNSlpCYmwwaXJUd6FupWxvZ2luo3RpZNkgTkV4djhHWVJKZl9KX0ZVNVVSMTJzR0FXZDI3bC1BaE-jY2lk2SA1aHNzRUFkTXkwbUpUSUNuSk52QzlUWEV3M1ZhN2pmTw&client=5hssEAdMy0mJTICnJNvC9TXEw3Va7jfO&protocol=oauth2&scope=openid%20idp_id%20roles%20email%20given_name%20family_name%20djid%20djUsername%20djStatus%20trackid%20tags%20prts%20suuid%20createTimestamp&response_type=code&redirect_uri=https%3A%2F%2Faccounts.wsj.com%2Fauth%2Fsso%2Flogin&nonce=8b0c1450-b8a6-4f08-88de-8ee4c1e877e5&ui_locales=en-us-x-wsj-215-2&mars=-1&ns=prod%2Faccounts-wsj#!/signin')
 search = driver.find_element_by_class_name("username")
 time.sleep(5)
