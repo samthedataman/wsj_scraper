@@ -6,7 +6,6 @@ import pandas as pd
 import numpy as np
 import requests as r
 from bs4 import BeautifulSoup
-import undetected_chromedriver as uc
 import time
 from selenium.common.exceptions import NoSuchElementException        
 from selenium.webdriver.common.action_chains import ActionChains
