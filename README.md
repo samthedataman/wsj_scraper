@@ -33,7 +33,7 @@ Future Meta Data:
 2) Sentiment/Polarity per article
 3) Name Entity Recognication for politications / world leaders / places etc.
 4) Comment word length
-5) Reply or Origonal Comment Indicator
+5) Reply or Original Comment Indicator
 
 This scraper is currently hosted locally and is being reformated in order to work via docker/ec2 instance!
 
