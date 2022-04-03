@@ -12,9 +12,10 @@ Prereqs:
 5) Space on your hardrive to download the data
 
 
-Once run, this script will create a new directory for the current day and save comment data, per article within seperate csv files.
+Once run, this script will create a new directory for the current day within the master directory set by the user, and then save comment data, per article within seperate csv files. The file(s) naming convention is {TODAY_DATE}_article_name.csv
 
 A Master csv file will also be created within the day-based-directory which is an appended file of all comment data for that day for every article.
+The master file naming convention is MasterCSV_{TODAY_DATE}.csv
 
 Current Meta Data Artificats :
 
