@@ -35,13 +35,15 @@ Future Meta Data:
 4) Comment word length
 5) Reply or Original Comment Indicator
 
-This scraper is currently hosted locally and is being reformated in order to work via docker/ec2 instance!
-
 Some of the challenges within this project included:
 
 1) WSJ exhibits different web element names/properties for the same web gui buttons seen by user
 2) WSJ hides all elements within "ShadowRoot" HTML branches which make any obvoiuse scraping oppurtunities difficult
 3) WSJ comments do not have datetime so downstream regex transformations were made to all date related meta data to created a ingestible datetime format
 4) WSJ comment upvote contents are variable so regex was required to extract upvote data
+
+This scraper is currently hosted locally and is being reformated in order to work via docker/ec2 instance. 
+
+Eventually this scraper will be turned into an restAPI.
 
 -Please reach out if you found this useful / could make suggestions or forks on future improvements!
