@@ -142,11 +142,11 @@ driver = webdriver.Chrome('./chromedriver',options=chrome_options)
 driver.get('https://sso.accounts.dowjones.com/login?state=hKFo2SAyaEVBbUlxVVlqV0w5blRIVnFGYWtNSlpCYmwwaXJUd6FupWxvZ2luo3RpZNkgTkV4djhHWVJKZl9KX0ZVNVVSMTJzR0FXZDI3bC1BaE-jY2lk2SA1aHNzRUFkTXkwbUpUSUNuSk52QzlUWEV3M1ZhN2pmTw&client=5hssEAdMy0mJTICnJNvC9TXEw3Va7jfO&protocol=oauth2&scope=openid%20idp_id%20roles%20email%20given_name%20family_name%20djid%20djUsername%20djStatus%20trackid%20tags%20prts%20suuid%20createTimestamp&response_type=code&redirect_uri=https%3A%2F%2Faccounts.wsj.com%2Fauth%2Fsso%2Flogin&nonce=8b0c1450-b8a6-4f08-88de-8ee4c1e877e5&ui_locales=en-us-x-wsj-215-2&mars=-1&ns=prod%2Faccounts-wsj#!/signin')
 search = driver.find_element_by_class_name("username")
 time.sleep(5)
-search.send_keys("samuel.savage@uconn.edu")
+search.send_keys("YOUR EMAIL")
 driver.find_element_by_xpath('//*[@id="basic-login"]/div[1]/form/div[2]/div[6]/div[1]/button[2]').click()
 time.sleep(5)
 password = driver.find_element_by_id("password-login-password")
-password.send_keys("0ldSp!ce")
+password.send_keys("YOUR PASSWORD")
 time.sleep(5)
 button =  driver.find_element_by_xpath('//*[@id="password-login"]/div/form/div/div[5]/div[1]/button') 
 button.click()
@@ -296,7 +296,7 @@ for i in head_links:
         df['sections'] = nav_section_name
         df = text_analyzer(df)
         print(df.columns) 
-        path = f'/Users/samsavage/Desktop/Urban Dictionary/WSJ Data/{TODAY_DATE}'
+        path = f'/Users/yourname/Desktop/WSJ Data/{TODAY_DATE}'
         if os.path.exists(path) == False:
             os.mkdir(path)
         df.to_csv(f'{path}/{TODAY_DATE}_{name_of_article}.csv')
@@ -310,7 +310,7 @@ for i in head_links:
         all_data_raw.clear()
 
 ##############read meta data to master file##################################
-path = f'/Users/samsavage/Desktop/Urban Dictionary/WSJ Data/{TODAY_DATE}'
+path = f'/Users/samsavage/Desktop/yourname/WSJ Data/{TODAY_DATE}'
 file_cats =[]
 for file in os.listdir(path):
     try:
