@@ -27,14 +27,21 @@ Current Meta Data Artificats :
 7) article_name	: Name of article scraped
 8) link	: Link of Article Scraped
 9) sections	: Section link of article scraped
+10) word_count : Count of words in comment 
+11) character_count : Count of characters in comment
+12) link_count : Count of links in comment
+13) emoji_count	: Count of emojis in comment
+14) hashtag_count	: Count of hashtags in comment
+15) mention_count	: Count of mentions in comment
+16) polarity_pos : Positivite Polarity Score provided by nltk 
+17) polarity_neg : Negative Polarity Score provided by nltk 
+18) polarity_neu : Nuetral Polarity Score provided by nltk 
+19) polarity_compound : Compound Polarity Score provided by nltk 
 
 Future Meta Data:
 
-1) Sentiment/Polarity per comment
-2) Sentiment/Polarity per article
-3) Name Entity Recognication for politications / world leaders / places etc.
-4) Comment word length
-5) Reply or Original Comment Indicator
+1) Name Entity Recognication for politications / world leaders / places etc.
+2) Reply or Original Comment Indicator
 
 Some of the challenges within this project included:
 
