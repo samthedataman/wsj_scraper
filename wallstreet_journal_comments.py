@@ -310,7 +310,7 @@ for i in head_links:
         all_data_raw.clear()
 
 ##############read meta data to master file##################################
-path = f'/Users/samsavage/Desktop/yourname/WSJ Data/{TODAY_DATE}'
+path = f'/Users/yourname/Desktop/WSJ Data/{TODAY_DATE}'
 file_cats =[]
 for file in os.listdir(path):
     try:
