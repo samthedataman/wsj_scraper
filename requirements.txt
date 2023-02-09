@@ -1,0 +1,8 @@
+selenium
+pandas
+requests
+nltk
+sklearn
+python-dotenv
+undetected_chromedriver
+boto3
